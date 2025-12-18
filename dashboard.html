@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Authentication System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="dashboard-nav">
+            <h2><i class="fas fa-tachometer-alt"></i> Dashboard</h2>
+            <button id="logoutBtn" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </nav>
+        <div class="dashboard-content">
+            <div class="welcome-card">
+                <h1>Welcome, <span id="username">User</span>!</h1>
+                <p>You've successfully logged into your secure dashboard.</p>
+            </div>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Last Login</h3>
+                    <p id="lastLogin">Just now</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security Status</h3>
+                    <p>Protected</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Account Status</h3>
+                    <p>Active</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
